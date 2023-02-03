@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logoCoderhome {
+    width: 80px;
+    height: 80px;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+.imagenInicio {
+    background-image: url(../assets/imagen-inicio.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+h1 {
+    text-align: center;
+    font-size: 80px;
+    color: white;
+}
+
+p {
+    margin-left: 37%;
+    max-width: 400px;
+    text-align: center;
+    color: white;
+    font-size: 28px; 
+}
+
+section {
+    margin-top: 120px;
+}
+
+input {
+    margin-left: 46%;
+    margin-top: 8%;
+    font-size: 20px;
+    padding: 5px;
+    color: white;
+    background-color: slategrey;
+    cursor: pointer;
+}
+
+input:hover {
+    background-color:lightslategrey;
+}
+
+.navBar {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    margin-top: 30px;
+}
+
+.navBar ul {
+    display: flex;
+    list-style: none;
+    margin-top: 15px;
+    margin-left: 24%;
+}
+
+.login {
+   margin-left: 280px; 
+   display: flex;
+}
+
+.login img {
+    color: white;
+    margin-top: -6px;
+    margin-right: 20px;
+}
+
+.navBar li {
+    margin-left: 20px;
+}
+
+.navBar a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+.navBar a:hover{
+    color: lightslategrey;
+    font-size: 30px;
+}
+
