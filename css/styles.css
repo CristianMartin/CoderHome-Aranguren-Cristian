@@ -1,21 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.logoCoderhome {
-    width: 80px;
-    height: 80px;
-    margin-left: 30px;
-    margin-top: 15px;
-}
-
-.imagenInicio {
-    background-image: url(../assets/imagen-inicio.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment:fixed;
+body {
+    background-color:rgb(187, 188, 195);
 }
 
 h1 {
@@ -24,69 +14,207 @@ h1 {
     color: white;
 }
 
-p {
-    margin-left: 37%;
-    max-width: 400px;
+h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.logo-coderhome {
+    width: 80px;
+    height: 70px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.logo-coderhome:hover {
+    color: white;
+    box-shadow: 0 4px 16px orange;
+    transition: all 0.2s ease;
+}
+
+.imagen-inicio {
+    background-image: url(../assets/imagen-inicio.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+.seccion-inicio {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: column;
+    justify-items: center;
+    grid-template-areas:
+    "titulo-inicio"
+    "leyenda-inicio"
+    "boton-inicio";
+}
+
+.titulo-inicio { 
+    grid-area: titulo-inicio; 
+}
+
+.leyenda-inicio {
+    grid-area: leyenda-inicio; 
+    color: white;
+    font-size: 28px;
     text-align: center;
+    max-width: 400px;
+}
+
+.boton-inicio {
+    grid-area: boton-inicio;
     color: white;
-    font-size: 28px; 
-}
-
-section {
-    margin-top: 120px;
-}
-
-input {
-    margin-left: 46%;
-    margin-top: 8%;
+    margin-top: 50%;
     font-size: 20px;
-    padding: 5px;
-    color: white;
+    padding: 6px 12px;
     background-color: slategrey;
+    border: 1.5px solid;
+    border-radius: 30px;
+    border-color: black;
     cursor: pointer;
 }
 
-input:hover {
-    background-color:lightslategrey;
+.boton-inicio:hover {
+    color: white;
+    box-shadow: 0 4px 16px lightslategrey;
+    transition: all 0.2s ease;
 }
 
-.navBar {
+.navbar {
     display: flex;
     align-items: center;
-    height: 60px;
-    margin-top: 30px;
 }
 
-.navBar ul {
+.navbar ul {
     display: flex;
     list-style: none;
     margin-top: 15px;
     margin-left: 24%;
 }
 
-.login {
-   margin-left: 280px; 
-   display: flex;
-}
-
-.login img {
-    color: white;
-    margin-top: -6px;
-    margin-right: 20px;
-}
-
-.navBar li {
-    margin-left: 20px;
-}
-
-.navBar a{
+.navbar ul li a {
     text-decoration: none;
     color: white;
     font-size: 30px;
 }
 
-.navBar a:hover{
-    color: lightslategrey;
+.navbar ul li a:hover {
+    color: rgb(134, 140, 147);
     font-size: 30px;
 }
 
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+}
+
+.login img {
+    color: white;
+    margin-left: 240px;
+    margin-right: 6px;
+}
+
+.seccion-quienes-somos {
+    margin-top: 60px;
+    display: grid;
+    grid-auto-flow: column dense;
+    grid-template-columns: 0.8fr 1fr; 
+    grid-template-rows: 0.4fr 2fr; 
+    gap: 0px 0px;
+    grid-template-areas: 
+      "imagen titulo"
+      "imagen leyenda"; 
+}
+
+.quienes-somos-titulo { 
+    grid-area: titulo;
+    justify-self: left;
+    align-self: center;
+}
+
+.quienes-somos-leyenda { 
+    grid-area: leyenda; 
+    font-size: 18px;
+    max-width: 700px;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 24px;
+    border: 2px solid rgb(132, 138, 144);
+    background-color:rgb(130, 130, 131);
+}
+
+.quienes-somos-img {
+    grid-area: imagen;
+    justify-self: center;
+    align-self: flex-end;
+    border-radius: 24px;
+    width: 400px;
+    height: 408px;
+    border: 2px solid rgb(132, 138, 144);
+}
+
+.navbar-toggler {
+    color: white;
+    font-size: 60px;
+    padding: 0;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.navbar-toggler:hover {
+    color: white;
+    box-shadow: 0 4px 16px lightslategrey;
+    transition: all 0.2s ease;
+}
+
+@media (max-width: 990px) {
+    .navbar ul {
+        flex-direction: column;
+        text-align: end;
+    }
+
+    .login img {
+        display: none;
+    }
+    
+    .login {
+        display: block;
+    }
+
+    .seccion-quienes-somos {
+        grid-template-columns: 1fr; 
+        grid-template-rows: 0fr 0.5fr 1fr; 
+        gap: 30px 0px;
+        grid-template-areas:
+            "titulo" 
+            "imagen"
+            "leyenda"; 
+    }
+
+    .quienes-somos-titulo { 
+        grid-area: titulo;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .quienes-somos-leyenda { 
+        margin: 20px;
+    }
+}
+
+@media (max-width: 540px) {
+    .seccion-inicio {
+        margin-top: 100px;
+    }
+}
