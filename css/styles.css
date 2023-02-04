@@ -79,31 +79,30 @@ h2 {
     transition: all 0.2s ease;
 }
 
-.nav-bar {
+.navbar {
     display: flex;
     align-items: center;
 }
 
-.nav-bar ul {
+.navbar ul {
     display: flex;
     list-style: none;
     margin-top: 15px;
     margin-left: 24%;
 }
 
-.nav-bar ul li a {
-    text-align: center;
+.navbar ul li a {
     text-decoration: none;
     color: white;
     font-size: 30px;
 }
 
-.nav-bar ul li a:hover {
+.navbar ul li a:hover {
     color: rgb(198, 200, 202);
     font-size: 30px;
 }
 
-.nav-bar ul li {
+.navbar ul li {
     margin-left: 20px;
 }
 
@@ -146,3 +145,26 @@ h2 {
     border-color: rgb(198, 200, 202);
 }
 
+.navbar-toggler {
+    color: white;
+    font-size: 60px;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+@media (max-width: 990px) {
+    .navbar ul {
+        flex-direction: column;
+        text-align: end;
+    }
+
+    .login img {
+        display: none;
+    }
+    
+    .login {
+        display: block;
+    }
+}
