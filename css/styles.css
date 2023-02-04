@@ -1,10 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {
-    background-color:rgb(135, 137, 139);
+    background-color:rgb(187, 188, 195);
 }
 
 h1 {
@@ -15,15 +16,20 @@ h1 {
 
 h2 {
     color: white;
-    margin-left: 40px;
     margin-bottom: 10px;
 }
 
 .logo-coderhome {
     width: 80px;
-    height: 80px;
+    height: 70px;
     margin-left: 20px;
     margin-top: 10px;
+}
+
+.logo-coderhome:hover {
+    color: white;
+    box-shadow: 0 4px 16px orange;
+    transition: all 0.2s ease;
 }
 
 .imagen-inicio {
@@ -40,7 +46,7 @@ h2 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
-    grid-auto-flow: row;
+    grid-auto-flow: column;
     justify-items: center;
     grid-template-areas:
     "titulo-inicio"
@@ -98,7 +104,7 @@ h2 {
 }
 
 .navbar ul li a:hover {
-    color: rgb(198, 200, 202);
+    color: rgb(79, 84, 89);
     font-size: 30px;
 }
 
@@ -118,40 +124,58 @@ h2 {
 }
 
 .seccion-quienes-somos {
-    margin-top: 120px;
-    display: flex;
+    margin-top: 60px;
+    display: grid;
+    grid-auto-flow: column dense;
+    grid-template-columns: 0.8fr 1fr; 
+    grid-template-rows: 0.4fr 2fr; 
+    gap: 0px 0px;
+    grid-template-areas: 
+      "imagen titulo"
+      "imagen leyenda"; 
+}
+
+.quienes-somos-titulo { 
+    grid-area: titulo;
+    justify-self: left;
+    align-self: center;
+}
+
+.quienes-somos-leyenda { 
+    grid-area: leyenda; 
+    font-size: 18px;
+    max-width: 700px;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 24px;
+    border: 2px solid rgb(132, 138, 144);
+    background-color:rgb(130, 130, 131);
 }
 
 .quienes-somos-img {
-    margin-left: 80px;
+    grid-area: imagen;
+    justify-self: center;
+    align-self: flex-end;
+    border-radius: 24px;
     width: 400px;
     height: 408px;
-    border: 3px solid rgb(198, 200, 202);
-}
-
-.box-text {
-    flex-direction: column;
-    width:100%;
-    margin-top: 50px;
-}
-
-.box-text p {
-    font-size: 18px;
-    margin-left: 40px;
-    padding: 6px;
-    max-width: 86%;
-    color: white; 
-    background:rgb(198, 200, 202);
-    border-color: rgb(198, 200, 202);
+    border: 2px solid rgb(132, 138, 144);
 }
 
 .navbar-toggler {
     color: white;
     font-size: 60px;
+    padding: 0;
 }
 
 .navbar-toggler:focus {
     outline: none;
+}
+
+.navbar-toggler:hover {
+    color: white;
+    box-shadow: 0 4px 16px lightslategrey;
+    transition: all 0.2s ease;
 }
 
 @media (max-width: 990px) {
@@ -166,5 +190,11 @@ h2 {
     
     .login {
         display: block;
+    }
+}
+
+@media (max-width: 540px) {
+    .seccion-inicio {
+        margin-top: 100px;
     }
 }
