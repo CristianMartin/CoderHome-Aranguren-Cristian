@@ -22,8 +22,8 @@ h2 {
 .logo-coderhome {
     width: 80px;
     height: 80px;
-    margin-left: 30px;
-    margin-top: 15px;
+    margin-left: 20px;
+    margin-top: 10px;
 }
 
 .imagen-inicio {
@@ -91,30 +91,31 @@ h2 {
     margin-left: 24%;
 }
 
-.nav-bar a{
-    align-content: center;
+.nav-bar ul li a {
+    text-align: center;
     text-decoration: none;
     color: white;
     font-size: 30px;
 }
 
-.nav-bar a:hover{
+.nav-bar ul li a:hover {
     color: rgb(198, 200, 202);
     font-size: 30px;
 }
 
-.nav-bar li {
+.nav-bar ul li {
     margin-left: 20px;
 }
 
-.login-img {
-    color: white;
-    margin-right: 4px;
-    margin-top: -6px;
+.login {
+    display: flex;
+    align-items: center;
 }
 
 .login img {
-    color: rgb(135, 137, 139);
+    color: white;
+    margin-left: 240px;
+    margin-right: 6px;
 }
 
 .seccion-quienes-somos {
