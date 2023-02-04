@@ -104,7 +104,7 @@ h2 {
 }
 
 .navbar ul li a:hover {
-    color: rgb(79, 84, 89);
+    color: rgb(134, 140, 147);
     font-size: 30px;
 }
 
@@ -190,6 +190,26 @@ h2 {
     
     .login {
         display: block;
+    }
+
+    .seccion-quienes-somos {
+        grid-template-columns: 1fr; 
+        grid-template-rows: 0fr 0.5fr 1fr; 
+        gap: 30px 0px;
+        grid-template-areas:
+            "titulo" 
+            "imagen"
+            "leyenda"; 
+    }
+
+    .quienes-somos-titulo { 
+        grid-area: titulo;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .quienes-somos-leyenda { 
+        margin: 20px;
     }
 }
 
