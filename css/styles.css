@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Sono&display=swap");
+@import "https://fonts.googleapis.com/css2?family=Oswald&family=Sono&display=swap";
 * {
   margin: 0;
   padding: 0;
@@ -11,26 +11,25 @@ h1 {
   text-align: center;
   font-size: 80px;
   color: white;
-  font-family: 'Oswald', sans-serif; }
+  font-family: "Oswald", sans-serif; }
 
 h2 {
   color: white;
   margin-bottom: 10px;
-  font-family: 'Oswald', sans-serif; }
+  font-family: "Oswald", sans-serif; }
 
 p {
-  font-family: 'Sono', sans-serif; }
+  font-family: "Sono", sans-serif; }
 
 .logo-coderhome {
   width: 80px;
   height: 70px;
   margin-left: 20px;
   margin-top: 10px; }
-
-.logo-coderhome:hover {
-  color: white;
-  box-shadow: 0 4px 16px orange;
-  transition: all 0.2s ease; }
+  .logo-coderhome:hover {
+    color: white;
+    box-shadow: 0 4px 16px orange;
+    transition: all 0.2s ease; }
 
 .imagen-inicio {
   background-image: url(../assets/imagen-inicio.png);
@@ -47,7 +46,7 @@ p {
   gap: 0px 0px;
   grid-auto-flow: column;
   justify-items: center;
-  grid-template-areas: "titulo-inicio" "leyenda-inicio" "boton-inicio"; }
+  grid-template-areas: "titulo-inicio" "leyenda-inicio" "boton-inicio"; }
 
 .titulo-inicio {
   grid-area: titulo-inicio; }
@@ -70,42 +69,35 @@ p {
   border-radius: 30px;
   border-color: black;
   cursor: pointer; }
-
-.boton-inicio:hover {
-  color: white;
-  box-shadow: 0 4px 16px lightslategrey;
-  transition: all 0.2s ease; }
+  .boton-inicio:hover {
+    color: white;
+    box-shadow: 0 4px 16px lightslategrey;
+    transition: all 0.2s ease; }
 
 .navbar {
   display: flex;
   align-items: center; }
-
-.navbar ul {
-  display: flex;
-  list-style: none;
-  margin-top: 15px;
-  margin-left: 24%; }
-
-.navbar ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 30px; }
-
-.navbar ul li a:hover {
-  color: #868c93;
-  font-size: 30px; }
-
-.navbar ul li a {
-  margin-left: 20px; }
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    margin-top: 15px;
+    margin-left: 24%; }
+    .navbar ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 30px;
+      margin-left: 20px; }
+      .navbar ul li a:hover {
+        color: #868c93;
+        font-size: 30px; }
 
 .login {
   display: flex;
   align-items: center; }
-
-.login img {
-  color: white;
-  margin-left: 240px;
-  margin-right: 6px; }
+  .login img {
+    color: white;
+    margin-left: 240px;
+    margin-right: 6px; }
 
 .seccion-quienes-somos {
   margin-top: 60px;
@@ -114,7 +106,7 @@ p {
   grid-template-columns: 0.8fr 1fr;
   grid-template-rows: 0.4fr 2fr;
   gap: 0px 0px;
-  grid-template-areas: "imagen titulo" "imagen leyenda"; }
+  grid-template-areas: "imagen titulo" "imagen leyenda"; }
 
 .quienes-somos-titulo {
   grid-area: titulo;
@@ -145,35 +137,35 @@ p {
   color: white;
   font-size: 60px;
   padding: 0; }
-
-.navbar-toggler:focus {
-  outline: none; }
-
-.navbar-toggler:hover {
-  color: white;
-  box-shadow: 0 4px 16px lightslategrey;
-  transition: all 0.2s ease; }
+  .navbar-toggler:focus {
+    outline: none; }
+  .navbar-toggler:hover {
+    color: white;
+    box-shadow: 0 4px 16px lightslategrey;
+    transition: all 0.2s ease; }
 
 @media (max-width: 990px) {
   .navbar ul {
     flex-direction: column;
     text-align: end; }
-  .login img {
-    display: none; }
   .login {
     display: block; }
+    .login img {
+      display: none; }
   .seccion-quienes-somos {
     grid-template-columns: 1fr;
     grid-template-rows: 0fr 0.5fr 1fr;
     gap: 30px 0px;
-    grid-template-areas: "titulo"  "imagen" "leyenda"; }
+    grid-template-areas: "titulo" "imagen" "leyenda"; }
   .quienes-somos-titulo {
     grid-area: titulo;
     justify-self: center;
     align-self: center; }
   .quienes-somos-leyenda {
-    margin: 20px; } }
+    margin: 20px; } 
+}
 
 @media (max-width: 540px) {
   .seccion-inicio {
-    margin-top: 100px; } }
+    margin-top: 100px; } 
+}
