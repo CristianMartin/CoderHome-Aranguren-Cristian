@@ -6,6 +6,7 @@ $background-color_body: rgb(187, 188, 195);
 $background-color_boton: slategrey;
 $background-color_text_box: rgb(130, 130, 131);
 $border-color: black;
+$copyright-color: rgb(38, 40, 43);
 
 @import "https://fonts.googleapis.com/css2?family=Oswald&family=Sono&display=swap";
 
@@ -21,7 +22,6 @@ body {
 
 h1 {
 	text-align: center;
-	font-size: 80px;
 	color: $text-color;
 	font-family: $font-family_title;
 }
@@ -34,6 +34,19 @@ h2 {
 
 p {
 	font-family: $font-family_text;
+}
+
+.coderhome-titulo {
+	font-size: 80px;
+}
+
+footer {
+    position: sticky;
+    width: 100%;
+}
+
+.copyright {
+    background-color: $copyright-color;
 }
 
 .logo-coderhome {
@@ -138,6 +151,7 @@ p {
 	grid-template-rows: 0.4fr 2fr;
 	gap: 0px 0px;
 	grid-template-areas: "imagen titulo" "imagen leyenda";
+    margin-bottom: 38px;
 }
 
 .quienes-somos-titulo {
@@ -182,6 +196,10 @@ p {
 	}
 }
 
+.login-card {
+
+}
+
 @media (max-width: 990px) {
 	.navbar {
 		ul {
@@ -219,4 +237,8 @@ p {
 	.seccion-inicio {
 		margin-top: 100px;
 	}
+
+    .quienes-somos-img {
+        align-self: center;
+    }
 }
