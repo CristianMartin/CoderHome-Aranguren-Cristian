@@ -21,14 +21,167 @@
     />
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="short icon" href="../assets/contao-logo.png" />
-    <link rel="stylesheet" href="../css/contacto.css" />
     <title>CoderHome | Contacto</title>
   </head>
   <body>
     <header>
-      <h1>CONCTACTO EN PROGRESO</h1>
+      <nav class="navbar navbar-expand-lg">
+        <a href="../index.html">
+          <img
+            class="logo-coderhome"
+            src="../assets/contao-logo.png"
+            alt="logo_coderhome"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#opciones"
+        >
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="center collapse navbar-collapse" id="opciones">
+          <ul>
+            <li>
+              <a href="../index.html">Inicio</a>
+            </li>
+            <li>
+              <a href="../pages/quienes-somos.html">Quienes somos</a>
+            </li>
+            <li>
+              <a href="../pages/productos.html">Productos</a>
+            </li>
+            <li>
+              <a href="../pages/contacto.html">Contacto</a>
+            </li>
+            <li>
+              <a class="login" href="../pages/login.html">
+                <img src="../assets/icons8-user-48.png" alt="login-img" />
+                <span>Login</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main>
+      <section>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10 col-md-12">
+              <div class="wrapper">
+                <div class="row no-gutters">
+                  <div class="col-md-7 d-flex align-items-stretch">
+                    <div class="w-100 p-md-5 p-4">
+                      <h1 class="mb-4">Contáctese con nosotros</h1>
+                      <form>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="nombre"
+                                id="nombre"
+                                placeholder="Nombre"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <input
+                                type="email"
+                                class="form-control"
+                                name="email"
+                                id="email"
+                                placeholder="Email"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <input
+                                type="text"
+                                class="form-control"
+                                name="Asunto"
+                                id="Asunto"
+                                placeholder="Asunto"
+                              />
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <textarea
+                                name="mensaje"
+                                class="form-control"
+                                id="mensaje"
+                                cols="30"
+                                rows="7"
+                                placeholder="Mensaje"
+                              ></textarea>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <input
+                                type="submit"
+                                value="Enviar"
+                                class="btn btn-info w-100"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="col-md-5 d-flex align-items-stretch mb-5">
+                    <div class="info-wrap bg-info w-100 p-lg-5 p-3">
+                      <h3 class="mb-4 mt-md-4 text-white">Nuestros contactos</h3>
+                      <div class="dbox w-100 d-flex align-items-start">
+                        <div
+                          class="d-flex align-items-center justify-content-center"
+                        >
+                          <span class="bi bi-geo-alt-fill text-white"></span>
+                        </div>
+                        <div class="text-white pl-3">
+                          <p><span>Dirección:</span> San Martín 536, CABA</p>
+                        </div>
+                      </div>
+                      <div class="dbox w-100 d-flex align-items-start">
+                        <div
+                          class="d-flex align-items-center justify-content-center"
+                        >
+                          <span class="bi bi-phone text-white"></span>
+                        </div>
+                        <div class="text-white pl-3">
+                          <p>
+                            <span>Teléfono:</span>
+                            <span>+54 91191345844</span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="dbox w-100 d-flex align-items-start">
+                        <div
+                          class="d-flex align-items-center justify-content-center"
+                        >
+                          <span class="bi bi-envelope-check text-white"></span>
+                        </div>
+                        <div class="text-white pl-3">
+                          <p>
+                            <span>Email:</span>
+                            <span>info@CoderHome.com</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="bg-secondary text-center text-white">
       <div class="container pt-4">
@@ -80,4 +233,19 @@
       </div>
     </footer>
   </body>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
 </html>
