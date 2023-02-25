@@ -154,6 +154,9 @@ footer {
     box-shadow: 0 4px 16px lightslategrey;
     transition: all 0.2s ease; }
 
+.adjust-img {
+  height: 296px; }
+
 @media (max-width: 990px) {
   .navbar ul {
     flex-direction: column;
