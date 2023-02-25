@@ -223,13 +223,13 @@ footer {
 	}
 
 	.quienes-somos-titulo {
-		grid-area: titulo;
 		justify-self: center;
-		align-self: center;
 	}
 
 	.quienes-somos-leyenda {
 		margin: 20px;
+		justify-self: center;
+		align-self: center;
 	}
 }
 

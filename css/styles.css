@@ -171,11 +171,11 @@ footer {
     gap: 30px 0px;
     grid-template-areas: "titulo" "imagen" "leyenda"; }
   .quienes-somos-titulo {
-    grid-area: titulo;
-    justify-self: center;
-    align-self: center; }
+    justify-self: center; }
   .quienes-somos-leyenda {
-    margin: 20px; } }
+    margin: 20px;
+    justify-self: center;
+    align-self: center; } }
 
 @media (max-width: 540px) {
   .seccion-inicio {
