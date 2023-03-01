@@ -3,7 +3,7 @@ $text-color-hover: rgb(134, 140, 147);
 $font-family_title: 'Oswald', sans-serif;
 $font-family_text: 'Sono', sans-serif;
 $background-color_body: rgb(187, 188, 195);
-$background-color_boton: slategrey;
+$background-color_boton: #6c757d;
 $background-color_text_box: rgb(130, 130, 131);
 $border-color: black;
 $copyright-color: rgb(38, 40, 43);
@@ -18,6 +18,9 @@ $copyright-color: rgb(38, 40, 43);
 
 body {
 	background-color: $background-color_body;
+	position: relative;
+	padding-bottom: 10em;
+	min-height: 100vh;
 }
 
 h1 {
@@ -36,13 +39,14 @@ p {
 	font-family: $font-family_text;
 }
 
-.coderhome-titulo {
-	font-size: 80px;
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
 
-footer {
-    position: sticky;
-    width: 100%;
+.coderhome-titulo {
+	font-size: 80px;
 }
 
 .copyright {
@@ -52,8 +56,7 @@ footer {
 .logo-coderhome {
 	width: 80px;
 	height: 70px;
-	margin-left: 20px;
-	margin-top: 10px;
+	margin: 10px;
 	&:hover {
 		color: $text-color;
 		box-shadow: 0 4px 16px orange;
@@ -111,36 +114,24 @@ footer {
 }
 
 .navbar {
-	display: flex;
-	align-items: center;
-	ul {
-		display: flex;
-		list-style: none;
-		margin-top: 15px;
-		margin-left: 24%;
-		li {
+	.collapse {
 			a {
 				text-decoration: none;
 				color: $text-color;
-				font-size: 30px;
+				font-size: 20px;
 				margin-left: 20px;
 				&:hover {
 					color: $text-color-hover;
-					font-size: 30px;
+					font-size: 20px;
 				}
 			}
-		}
 	}
 }
 
 .login {
-	display: flex;
-	align-items: center;
-	img {
-		color: $text-color;
-		margin-left: 240px;
-		margin-right: 6px;
-	}
+	position:absolute;
+	left: 90%;
+	min-width: 150px;
 }
 
 .seccion-quienes-somos {
@@ -182,10 +173,9 @@ footer {
 	border: 2px solid rgb(132, 138, 144);
 }
 
-.navbar-toggler {
+.boton-menu {
 	color: $text-color;
-	font-size: 60px;
-	padding: 0;
+	font-size: 46px;
 	&:focus {
 		outline: none;
 	}
@@ -197,22 +187,30 @@ footer {
 }
 
 .adjust-img {
-	height: 296px;
+	height: 360px;
+}
+
+@media (max-width: 1500px) {
+	.login {
+		left: 85%;
+	}
 }
 
 @media (max-width: 990px) {
-	.navbar {
-		ul {
-			flex-direction: column;
-			text-align: end;
-		}
+	header {
+		position: sticky;
+		z-index: 1;
+		top: 0px;
 	}
 
 	.login {
+		position: relative;
+		left: 0;
+		margin-top: 8px;
+		margin-bottom: 10px;
 		img {
 			display: none;
 		}
-		display: block;
 	}
 
 	.seccion-quienes-somos {

@@ -5,7 +5,10 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #bbbcc3; }
+  background-color: #bbbcc3;
+  position: relative;
+  padding-bottom: 10em;
+  min-height: 100vh; }
 
 h1 {
   text-align: center;
@@ -20,12 +23,13 @@ h2 {
 p {
   font-family: "Sono", sans-serif; }
 
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+
 .coderhome-titulo {
   font-size: 80px; }
-
-footer {
-  position: sticky;
-  width: 100%; }
 
 .copyright {
   background-color: #26282b; }
@@ -33,8 +37,7 @@ footer {
 .logo-coderhome {
   width: 80px;
   height: 70px;
-  margin-left: 20px;
-  margin-top: 10px; }
+  margin: 10px; }
   .logo-coderhome:hover {
     color: white;
     box-shadow: 0 4px 16px orange;
@@ -73,7 +76,7 @@ footer {
   margin-top: 50%;
   font-size: 20px;
   padding: 6px 12px;
-  background-color: slategrey;
+  background-color: #6c757d;
   border: 1.5px solid;
   border-radius: 30px;
   border-color: black;
@@ -83,30 +86,19 @@ footer {
     box-shadow: 0 4px 16px lightslategrey;
     transition: all 0.2s ease; }
 
-.navbar {
-  display: flex;
-  align-items: center; }
-  .navbar ul {
-    display: flex;
-    list-style: none;
-    margin-top: 15px;
-    margin-left: 24%; }
-    .navbar ul li a {
-      text-decoration: none;
-      color: white;
-      font-size: 30px;
-      margin-left: 20px; }
-      .navbar ul li a:hover {
-        color: #868c93;
-        font-size: 30px; }
+.navbar .collapse a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin-left: 20px; }
+  .navbar .collapse a:hover {
+    color: #868c93;
+    font-size: 20px; }
 
 .login {
-  display: flex;
-  align-items: center; }
-  .login img {
-    color: white;
-    margin-left: 240px;
-    margin-right: 6px; }
+  position: absolute;
+  left: 90%;
+  min-width: 150px; }
 
 .seccion-quienes-somos {
   margin-top: 60px;
@@ -143,26 +135,33 @@ footer {
   height: 408px;
   border: 2px solid #848a90; }
 
-.navbar-toggler {
+.boton-menu {
   color: white;
-  font-size: 60px;
-  padding: 0; }
-  .navbar-toggler:focus {
+  font-size: 46px; }
+  .boton-menu:focus {
     outline: none; }
-  .navbar-toggler:hover {
+  .boton-menu:hover {
     color: white;
     box-shadow: 0 4px 16px lightslategrey;
     transition: all 0.2s ease; }
 
 .adjust-img {
-  height: 296px; }
+  height: 360px; }
+
+@media (max-width: 1500px) {
+  .login {
+    left: 85%; } }
 
 @media (max-width: 990px) {
-  .navbar ul {
-    flex-direction: column;
-    text-align: end; }
+  header {
+    position: sticky;
+    z-index: 1;
+    top: 0px; }
   .login {
-    display: block; }
+    position: relative;
+    left: 0;
+    margin-top: 8px;
+    margin-bottom: 10px; }
     .login img {
       display: none; }
   .seccion-quienes-somos {
