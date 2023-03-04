@@ -40,6 +40,7 @@ p {
 }
 
 footer {
+	box-shadow: 2px 1px 5px #000;
 	position: absolute;
 	bottom: 0;
 	width: 100%;
@@ -114,6 +115,7 @@ footer {
 }
 
 .navbar {
+	box-shadow: 2px 1px 5px #000;
 	.collapse {
 			a {
 				text-decoration: none;

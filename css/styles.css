@@ -24,6 +24,7 @@ p {
   font-family: "Sono", sans-serif; }
 
 footer {
+  box-shadow: 2px 1px 5px #000;
   position: absolute;
   bottom: 0;
   width: 100%; }
@@ -86,14 +87,16 @@ footer {
     box-shadow: 0 4px 16px #868c93;
     transition: all 0.2s ease; }
 
-.navbar .collapse a {
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-  margin-left: 20px; }
-  .navbar .collapse a:hover {
-    color: #868c93;
-    font-size: 20px; }
+.navbar {
+  box-shadow: 2px 1px 5px #000; }
+  .navbar .collapse a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 20px; }
+    .navbar .collapse a:hover {
+      color: #868c93;
+      font-size: 20px; }
 
 .login {
   position: absolute;
