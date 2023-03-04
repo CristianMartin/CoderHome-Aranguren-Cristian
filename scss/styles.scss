@@ -108,7 +108,7 @@ footer {
 	cursor: pointer;
 	&:hover {
 		color: $text-color;
-		box-shadow: 0 4px 16px lightslategrey;
+		box-shadow: 0 4px 16px $text-color-hover;
 		transition: all 0.2s ease;
 	}
 }
@@ -181,7 +181,7 @@ footer {
 	}
 	&:hover {
 		color: $text-color;
-		box-shadow: 0 4px 16px lightslategrey;
+		box-shadow: 0 4px 16px $text-color-hover;
 		transition: all 0.2s ease;
 	}
 }
@@ -194,6 +194,10 @@ footer {
 	span {
 		filter: invert(50%);
 	}
+}
+
+.success-icon {
+	font-size: 5em;
 }
 
 @media (max-width: 1500px) {

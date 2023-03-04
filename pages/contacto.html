@@ -134,11 +134,56 @@
                           </div>
                           <div class="col-md-12">
                             <div class="form-group">
-                              <input
-                                type="submit"
-                                value="Enviar"
+                              <button
+                                type="button"
                                 class="btn btn-info w-100 text-white"
-                              />
+                                data-bs-toggle="modal"
+                                data-bs-target="#envioModal"
+                              >
+                                Enviar
+                              </button>
+                            </div>
+                          </div>
+                          <div
+                            class="modal fade"
+                            id="envioModal"
+                            tabindex="-1"
+                            aria-labelledby="modalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content bg-success-subtle">
+                                <div class="modal-header">
+                                  <h1
+                                    class="modal-title fs-5 text-dark"
+                                    id="modalLabel"
+                                  >
+                                    Mensaje enviado correctamente
+                                  </h1>
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div
+                                  class="modal-body d-flex justify-content-center"
+                                >
+                                  <i
+                                    class="bi bi-check-circle-fill text-success success-icon"
+                                  ></i>
+                                </div>
+                                <div class="modal-footer">
+                                  <button
+                                    type="reset"
+                                    class="btn btn-danger"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    Close
+                                  </button>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -241,7 +286,9 @@
       </div>
       <div class="text-center p-3 copyright">
         © 2020 Copyright:
-        <a class="link-light" href="../index.html" target="_blank">CoderHome.com</a>
+        <a class="link-light" href="../index.html" target="_blank"
+          >CoderHome.com</a
+        >
       </div>
     </footer>
   </body>

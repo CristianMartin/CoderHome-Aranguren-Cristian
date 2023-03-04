@@ -83,7 +83,7 @@ footer {
   cursor: pointer; }
   .boton-inicio:hover {
     color: white;
-    box-shadow: 0 4px 16px lightslategrey;
+    box-shadow: 0 4px 16px #868c93;
     transition: all 0.2s ease; }
 
 .navbar .collapse a {
@@ -142,7 +142,7 @@ footer {
     outline: none; }
   .boton-menu:hover {
     color: white;
-    box-shadow: 0 4px 16px lightslategrey;
+    box-shadow: 0 4px 16px #868c93;
     transition: all 0.2s ease; }
 
 .adjust-img {
@@ -150,6 +150,9 @@ footer {
 
 .card-img-actions span {
   filter: invert(50%); }
+
+.success-icon {
+  font-size: 5em; }
 
 @media (max-width: 1500px) {
   .login {
