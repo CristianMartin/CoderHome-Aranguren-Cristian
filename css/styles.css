@@ -1,39 +1,19 @@
 @import "https://fonts.googleapis.com/css2?family=Oswald&family=Sono&display=swap";
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+.navbar {
+  box-shadow: 2px 1px 5px #000; }
+  .navbar .collapse a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 20px; }
+    .navbar .collapse a:hover {
+      color: #868c93;
+      font-size: 20px; }
 
-body {
-  background-color: #bbbcc3;
-  position: relative;
-  padding-bottom: 10em;
-  min-height: 100vh; }
-
-h1 {
-  text-align: center;
-  color: white;
-  font-family: "Oswald", sans-serif; }
-
-h2 {
-  color: white;
-  margin-bottom: 10px;
-  font-family: "Oswald", sans-serif; }
-
-p {
-  font-family: "Sono", sans-serif; }
-
-footer {
-  box-shadow: 2px 1px 5px #000;
+.login {
   position: absolute;
-  bottom: 0;
-  width: 100%; }
-
-.coderhome-titulo {
-  font-size: 80px; }
-
-.copyright {
-  background-color: #26282b; }
+  left: 90%;
+  min-width: 150px; }
 
 .logo-coderhome {
   width: 80px;
@@ -43,6 +23,42 @@ footer {
     color: white;
     box-shadow: 0 4px 16px orange;
     transition: all 0.2s ease; }
+
+.boton-menu {
+  color: white;
+  font-size: 46px; }
+  .boton-menu:focus {
+    outline: none; }
+  .boton-menu:hover {
+    color: white;
+    box-shadow: 0 4px 16px #868c93;
+    transition: all 0.2s ease; }
+
+@media (max-width: 1500px) {
+  .login {
+    left: 85%; } }
+
+@media (max-width: 990px) {
+  header {
+    position: sticky;
+    z-index: 2;
+    top: 0px; }
+  .login {
+    position: relative;
+    left: 0;
+    margin-top: 8px;
+    margin-bottom: 10px; }
+    .login img {
+      display: none; } }
+
+footer {
+  box-shadow: 2px 1px 5px #000;
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+
+.copyright {
+  background-color: #26282b; }
 
 .imagen-inicio {
   background-image: url(../assets/imagen-inicio.png);
@@ -62,7 +78,8 @@ footer {
   grid-template-areas: "titulo-inicio" "leyenda-inicio" "boton-inicio"; }
 
 .titulo-inicio {
-  grid-area: titulo-inicio; }
+  grid-area: titulo-inicio;
+  font-size: 80px; }
 
 .leyenda-inicio {
   grid-area: leyenda-inicio;
@@ -87,21 +104,9 @@ footer {
     box-shadow: 0 4px 16px #868c93;
     transition: all 0.2s ease; }
 
-.navbar {
-  box-shadow: 2px 1px 5px #000; }
-  .navbar .collapse a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    margin-left: 20px; }
-    .navbar .collapse a:hover {
-      color: #868c93;
-      font-size: 20px; }
-
-.login {
-  position: absolute;
-  left: 90%;
-  min-width: 150px; }
+@media (max-width: 540px) {
+  .seccion-inicio {
+    margin-top: 100px; } }
 
 .seccion-quienes-somos {
   margin-top: 60px;
@@ -138,41 +143,7 @@ footer {
   height: 408px;
   border: 2px solid #848a90; }
 
-.boton-menu {
-  color: white;
-  font-size: 46px; }
-  .boton-menu:focus {
-    outline: none; }
-  .boton-menu:hover {
-    color: white;
-    box-shadow: 0 4px 16px #868c93;
-    transition: all 0.2s ease; }
-
-.adjust-img {
-  height: 360px; }
-
-.card-img-actions span {
-  filter: invert(50%); }
-
-.success-icon {
-  font-size: 5em; }
-
-@media (max-width: 1500px) {
-  .login {
-    left: 85%; } }
-
 @media (max-width: 990px) {
-  header {
-    position: sticky;
-    z-index: 2;
-    top: 0px; }
-  .login {
-    position: relative;
-    left: 0;
-    margin-top: 8px;
-    margin-bottom: 10px; }
-    .login img {
-      display: none; }
   .seccion-quienes-somos {
     grid-template-columns: 1fr;
     grid-template-rows: 0fr 0.5fr 1fr;
@@ -186,7 +157,38 @@ footer {
     align-self: center; } }
 
 @media (max-width: 540px) {
-  .seccion-inicio {
-    margin-top: 100px; }
   .quienes-somos-img {
     align-self: center; } }
+
+.adjust-img {
+  height: 360px; }
+
+.card-img-actions span {
+  filter: invert(50%); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #bbbcc3;
+  position: relative;
+  padding-bottom: 10em;
+  min-height: 100vh; }
+
+h1 {
+  text-align: center;
+  color: white;
+  font-family: "Oswald", sans-serif; }
+
+h2 {
+  color: white;
+  margin-bottom: 10px;
+  font-family: "Oswald", sans-serif; }
+
+p {
+  font-family: "Sono", sans-serif; }
+
+.success-icon {
+  font-size: 5em; }

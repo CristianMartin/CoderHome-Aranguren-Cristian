@@ -1,0 +1,55 @@
+.imagen-inicio {
+	background-image: url(../assets/imagen-inicio.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.seccion-inicio {
+	margin-top: 60px;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	gap: 0px 0px;
+	grid-auto-flow: column;
+	justify-items: center;
+	grid-template-areas: "titulo-inicio" "leyenda-inicio" "boton-inicio";
+}
+
+.titulo-inicio {
+	grid-area: titulo-inicio;
+    font-size: 80px;
+}
+
+.leyenda-inicio {
+	grid-area: leyenda-inicio;
+	color: $text-color;
+	font-size: 28px;
+	text-align: center;
+	max-width: 400px;
+}
+
+.boton-inicio {
+	grid-area: boton-inicio;
+	color: $text-color;
+	margin-top: 50%;
+	font-size: 20px;
+	padding: 6px 12px;
+	background-color: $background-color_boton;
+	border: 1.5px solid;
+	border-radius: 30px;
+	border-color: $border-color;
+	cursor: pointer;
+	&:hover {
+		color: $text-color;
+		box-shadow: 0 4px 16px $text-color-hover;
+		transition: all 0.2s ease;
+	}
+}
+
+@media (max-width: 540px) {
+	.seccion-inicio {
+		margin-top: 100px;
+	}
+}
