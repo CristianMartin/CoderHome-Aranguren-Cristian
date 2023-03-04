@@ -78,7 +78,7 @@
     </header>
     <main>
       <section>
-        <div class="container p-5">
+        <div class="container mt-5 mb-5">
           <div
             class="row d-flex justify-content-center align-items-center h-100"
           >
@@ -110,18 +110,57 @@
                         >Contraseña</label
                       >
                     </div>
-
                     <p class="small mb-5 pb-lg-2">
-                      <a href="">¿Has olvidado tu contraseña?</a>
+                      <a class="text-info" href=""
+                        >¿Has olvidado tu contraseña?</a
+                      >
                     </p>
-
                     <button
+                      type="button"
                       class="btn btn-outline-light btn-lg px-5"
-                      type="submit"
+                      data-bs-toggle="modal"
+                      data-bs-target="#loginModal"
                     >
                       Login
                     </button>
-
+                    <div
+                      class="modal fade"
+                      id="loginModal"
+                      tabindex="-1"
+                      aria-labelledby="modalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content bg-success-subtle">
+                          <div class="modal-header">
+                            <h1
+                              class="modal-title fs-5 text-dark"
+                              id="modalLabel"
+                            >
+                              Usuario logueado correctamente
+                            </h1>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body d-flex justify-content-center">
+                            <i
+                              class="bi bi-check-circle-fill text-success success-icon"
+                            ></i>
+                          </div>
+                          <div class="modal-footer">
+                            <a
+                              href="../index.html"
+                              type="button"
+                              class="btn btn-danger"
+                            >Close</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                     <div
                       class="d-flex justify-content-center text-center mt-3 pt-1"
                     >
@@ -151,7 +190,7 @@
                   <div>
                     <p class="mb-0">
                       ¿No tienes una cuenta?
-                      <a href="">Registrarse</a>
+                      <a class="text-info" href="">Registrarse</a>
                     </p>
                   </div>
                 </div>
@@ -207,7 +246,9 @@
       </div>
       <div class="text-center p-3 copyright">
         © 2020 Copyright:
-        <a class="text-white" href="../index.html" target="_blank">CoderHome.com</a>
+        <a class="text-white" href="../index.html" target="_blank"
+          >CoderHome.com</a
+        >
       </div>
     </footer>
   </body>
