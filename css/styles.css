@@ -148,6 +148,9 @@ footer {
 .adjust-img {
   height: 360px; }
 
+.card-img-actions span {
+  filter: invert(50%); }
+
 @media (max-width: 1500px) {
   .login {
     left: 85%; } }
@@ -155,7 +158,7 @@ footer {
 @media (max-width: 990px) {
   header {
     position: sticky;
-    z-index: 1;
+    z-index: 2;
     top: 0px; }
   .login {
     position: relative;
