@@ -77,16 +77,65 @@
     </header>
     <main>
       <section class="seccion-quienes-somos">
-        <img
-          class="quienes-somos-img img-fluid"
-          src="../assets/Quienes-somos.jpg"
-          alt="quienes-somos.logo"
-        />
+        <div
+          id="quienes-somos-carousel"
+          class="carousel slide quienes-somos-carousel"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="../assets/armado-hardware.jpg"
+                class="d-block rounded-4 img-fluid quienes-somos-img"
+                alt="armado-hardware"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../assets/hardware-pc-1.jpg"
+                class="d-block rounded-4 img-fluid quienes-somos-img"
+                alt="hardware-pc"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../assets/Quienes-somos.jpg"
+                class="d-block rounded-4 img-fluid quienes-somos-img"
+                alt="quienes-somos-img-1"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#quienes-somos-carousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#quienes-somos-carousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
         <h2 class="quienes-somos-titulo">¿Quiénes somos?</h2>
         <div class="quienes-somos-leyenda">
           <p class="lead">
-            Somos una empresa de importación, venta y distribución de hardware, con una trayectoria de más de 15 años en el mercado, dedicada a proveer todos los componentes de hardware necesarios para el armado de PC y sus periféricos. <br>
-            En CoderHome tenemos como objetivo brindar hardware de excelencia a nuestros clientes. A lo largo de estos años, nos hemos caracterizado por proveer hardware y equipos armados a pedido para clientes con las máximas exigencias.
+            Somos una empresa de importación, venta y distribución de hardware,
+            con una trayectoria de más de 15 años en el mercado, dedicada a
+            proveer todos los componentes de hardware necesarios para el armado
+            de PC y sus periféricos. <br />
+            En CoderHome tenemos como objetivo brindar hardware de excelencia a
+            nuestros clientes. A lo largo de estos años, nos hemos caracterizado
+            por proveer hardware y equipos armados a pedido para clientes con
+            las máximas exigencias.
           </p>
         </div>
       </section>
@@ -137,7 +186,9 @@
       </div>
       <div class="text-center p-3 copyright">
         © 2020 Copyright:
-        <a class="text-white" href="../index.html" target="_blank">CoderHome.com</a>
+        <a class="text-white" href="../index.html" target="_blank"
+          >CoderHome.com</a
+        >
       </div>
     </footer>
   </body>
