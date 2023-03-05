@@ -116,14 +116,14 @@ footer {
     align-self: center; } }
 
 .seccion-quienes-somos {
-  margin-top: 60px;
+  margin-top: 3.75rem;
   display: grid;
   grid-auto-flow: column dense;
   grid-template-columns: 0.8fr 1fr;
   grid-template-rows: 0.4fr 2fr;
-  gap: 0px 0px;
+  gap: 0rem 0rem;
   grid-template-areas: "imagen titulo" "imagen leyenda";
-  margin-bottom: 38px; }
+  margin-bottom: 2.375rem; }
 
 .quienes-somos-titulo {
   grid-area: titulo;
@@ -132,12 +132,12 @@ footer {
 
 .quienes-somos-leyenda {
   grid-area: leyenda;
-  font-size: 18px;
-  max-width: 700px;
-  padding: 10px 15px;
+  font-size: 1.125rem;
+  max-width: 43.75rem;
+  padding: 0.625rem 1rem;
   color: white;
-  border-radius: 24px;
-  border: 2px solid #848a90;
+  border-radius: 1.5rem;
+  border: 0.125rem solid #848a90;
   background-color: #828283;
   overflow: auto; }
 
@@ -145,21 +145,21 @@ footer {
   grid-area: imagen;
   justify-self: center;
   align-self: flex-end;
-  border-radius: 24px;
-  width: 400px;
-  height: 408px;
-  border: 2px solid #848a90; }
+  border-radius: 1.5rem;
+  width: 25rem;
+  height: 25.5rem;
+  border: 0.125rem solid #848a90; }
 
 @media (max-width: 990px) {
   .seccion-quienes-somos {
     grid-template-columns: 1fr;
     grid-template-rows: 0fr 0.5fr 1fr;
-    gap: 30px 0px;
+    gap: 1.875rem 0rem;
     grid-template-areas: "titulo" "imagen" "leyenda"; }
   .quienes-somos-titulo {
     justify-self: center; }
   .quienes-somos-leyenda {
-    margin: 20px;
+    margin: 1.25rem;
     justify-self: center;
     align-self: center; } }
 
