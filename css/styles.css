@@ -131,7 +131,7 @@ footer {
 .quienes-somos-leyenda {
   grid-area: leyenda;
   font-size: 1.125rem;
-  max-width: 43.75rem;
+  max-width: 40rem;
   padding: 0.625rem 1rem;
   color: white;
   border-radius: 1.5rem;
