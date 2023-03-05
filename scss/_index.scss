@@ -7,11 +7,11 @@
 }
 
 .seccion-inicio {
-	margin-top: 60px;
+    margin-top: 6.9rem;
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
-	gap: 0px 0px;
+	gap: 0rem 0rem;
 	grid-auto-flow: column;
 	justify-items: center;
 	grid-template-areas: "titulo-inicio" "leyenda-inicio" "boton-inicio";
@@ -19,37 +19,48 @@
 
 .titulo-inicio {
 	grid-area: titulo-inicio;
-    font-size: 80px;
+    font-size: 5rem;
 }
 
 .leyenda-inicio {
 	grid-area: leyenda-inicio;
 	color: $text-color;
-	font-size: 28px;
+	font-size: 1.75rem;
 	text-align: center;
-	max-width: 400px;
+	max-width: 25rem;
 }
 
 .boton-inicio {
 	grid-area: boton-inicio;
 	color: $text-color;
 	margin-top: 50%;
-	font-size: 20px;
-	padding: 6px 12px;
+	font-size: 1.25rem;
+	padding: 0.375rem 0.75rem;
 	background-color: $background-color_boton;
-	border: 1.5px solid;
-	border-radius: 30px;
+	border: 0.1rem solid;
+	border-radius: 1.9rem;
 	border-color: $border-color;
 	cursor: pointer;
 	&:hover {
 		color: $text-color;
-		box-shadow: 0 4px 16px $text-color-hover;
+		box-shadow: 0 0.25rem 1rem $text-color-hover;
 		transition: all 0.2s ease;
 	}
 }
 
 @media (max-width: 540px) {
-	.seccion-inicio {
-		margin-top: 100px;
-	}
+    .titulo-inicio {
+        font-size: 3.75rem;
+    }
+
+    .leyenda-inicio {
+        font-size: 1.56rem;
+    }
+}
+
+@media (max-width: 354px) {
+    .titulo-inicio {
+        font-size: 3.75rem;
+        align-self: center;
+    }
 }
