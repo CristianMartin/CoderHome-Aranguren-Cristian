@@ -68,7 +68,7 @@ footer {
   background-attachment: fixed; }
 
 .seccion-inicio {
-  margin-top: 6.9rem;
+  margin-top: 6rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -79,6 +79,7 @@ footer {
 
 .titulo-inicio {
   grid-area: titulo-inicio;
+  align-self: center;
   font-size: 5rem; }
 
 .leyenda-inicio {
@@ -86,7 +87,7 @@ footer {
   color: white;
   font-size: 1.75rem;
   text-align: center;
-  max-width: 25rem; }
+  max-width: 25.5rem; }
 
 .boton-inicio {
   grid-area: boton-inicio;
@@ -106,14 +107,11 @@ footer {
 
 @media (max-width: 540px) {
   .titulo-inicio {
-    font-size: 3.75rem; }
-  .leyenda-inicio {
-    font-size: 1.56rem; } }
-
-@media (max-width: 354px) {
-  .titulo-inicio {
     font-size: 3.75rem;
-    align-self: center; } }
+    align-self: center; }
+  .leyenda-inicio {
+    max-width: 23rem;
+    font-size: 1.56rem; } }
 
 .seccion-quienes-somos {
   margin-top: 3.75rem;

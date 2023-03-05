@@ -7,7 +7,7 @@
 }
 
 .seccion-inicio {
-    margin-top: 6.9rem;
+    margin-top: 6rem;
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
@@ -19,6 +19,7 @@
 
 .titulo-inicio {
 	grid-area: titulo-inicio;
+	align-self: center;
     font-size: 5rem;
 }
 
@@ -27,7 +28,7 @@
 	color: $text-color;
 	font-size: 1.75rem;
 	text-align: center;
-	max-width: 25rem;
+	max-width: 25.5rem;
 }
 
 .boton-inicio {
@@ -51,16 +52,11 @@
 @media (max-width: 540px) {
     .titulo-inicio {
         font-size: 3.75rem;
+        align-self: center;
     }
 
     .leyenda-inicio {
+		max-width: 23rem;
         font-size: 1.56rem;
-    }
-}
-
-@media (max-width: 354px) {
-    .titulo-inicio {
-        font-size: 3.75rem;
-        align-self: center;
     }
 }
