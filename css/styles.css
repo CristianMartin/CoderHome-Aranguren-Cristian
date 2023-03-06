@@ -1,13 +1,14 @@
 @import "https://fonts.googleapis.com/css2?family=Oswald&family=Sono&display=swap";
 .navbar {
-  box-shadow: 0.125rem 0.07rem 0.313rem #000; }
+  box-shadow: 0.125rem 0.07rem 0.313rem #000;
+  background-image: linear-gradient(to bottom, #004C98, #021E3A); }
   .navbar .collapse a {
     text-decoration: none;
     color: white;
     font-size: 1.25rem;
     margin-left: 1.25rem; }
     .navbar .collapse a:hover {
-      color: #868c93;
+      color: #f47c00;
       font-size: 1.25rem; }
 
 .login {
@@ -31,7 +32,7 @@
     outline: none; }
   .boton-menu:hover {
     color: white;
-    box-shadow: 0 0.25rem 1rem #868c93;
+    box-shadow: 0 0.25rem 1rem #f47c00;
     transition: all 0.2s ease; }
 
 @media (max-width: 1500px) {
@@ -52,13 +53,14 @@
       display: none; } }
 
 footer {
+  background-image: linear-gradient(to bottom, #004C98, #021E3A);
   box-shadow: 0.125rem 0.07rem 0.313rem #000;
   position: absolute;
   bottom: 0;
   width: 100%; }
 
 .copyright {
-  background-color: #26282b; }
+  background-color: #040500; }
 
 .imagen-inicio {
   background-image: url(../assets/img-inicio.png);
@@ -92,18 +94,18 @@ footer {
 
 .boton-inicio {
   grid-area: boton-inicio;
+  background-image: linear-gradient(to bottom, #004C98, #021E3A);
   color: white;
   margin-top: 50%;
   font-size: 1.25rem;
   padding: 0.375rem 0.75rem;
-  background-color: #6c757d;
   border: 0.08rem solid;
   border-radius: 1.9rem;
-  border-color: black;
+  border-color: #040500;
   cursor: pointer; }
   .boton-inicio:hover {
-    color: white;
-    box-shadow: 0 0.25rem 1rem #868c93;
+    color: #f47c00;
+    box-shadow: 0 0.25rem 1rem #f47c00;
     transition: all 0.2s ease; }
 
 @media (max-width: 540px) {
@@ -175,6 +177,14 @@ footer {
     width: auto; }
   .quienes-somos-img {
     height: 22rem; } }
+
+.card-body button {
+  background-image: linear-gradient(to bottom, #004C98, #021E3A); }
+  .card-body button:hover {
+    background-image: inherit;
+    background-color: #f47c00; }
+    .card-body button:hover:active {
+      background-color: #f47c00; }
 
 .card-img-actions span {
   filter: invert(50%); }

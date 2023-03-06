@@ -1,3 +1,16 @@
+.card-body {
+	button {
+		background-image: $background-color_boton;
+		&:hover	{
+			background-image: inherit;
+			background-color: $text-color-hover;
+			&:active {
+				background-color: $text-color-hover;
+			}	
+		}
+	}
+}
+
 .card-img-actions {
 	span {
 		filter: invert(50%);

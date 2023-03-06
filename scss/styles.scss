@@ -1,12 +1,14 @@
-$text-color: white;
-$text-color-hover: rgb(134, 140, 147);
 $font-family_title: 'Oswald', sans-serif;
 $font-family_text: 'Sono', sans-serif;
+$text-color: white;
+$text-color-hover: #f47c00;
 $background-color_body: rgb(187, 188, 195);
-$background-color_boton: #6c757d;
+$background-color_navbar: linear-gradient(to bottom, #004C98, #021E3A);
+$background-color_boton: linear-gradient(to bottom, #004C98, #021E3A);
+$background-color_footer: linear-gradient(to bottom, #004C98, #021E3A);
 $background-color_text_box: rgb(130, 130, 131);
-$border-color: black;
-$background-copyright-color: rgb(38, 40, 43);
+$border-color: #040500;
+$background-copyright-color: #040500;
 
 @import "https://fonts.googleapis.com/css2?family=Oswald&family=Sono&display=swap";
 @import "header";
