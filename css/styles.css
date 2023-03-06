@@ -61,14 +61,15 @@ footer {
   background-color: #26282b; }
 
 .imagen-inicio {
-  background-image: url(../assets/imagen-inicio.png);
-  background-repeat: no-repeat;
+  background-image: url(../assets/img-inicio.png);
   background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
-  background-attachment: fixed; }
+  padding: 0; }
 
 .seccion-inicio {
-  margin-top: 6rem;
+  padding-top: 5rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -96,7 +97,7 @@ footer {
   font-size: 1.25rem;
   padding: 0.375rem 0.75rem;
   background-color: #6c757d;
-  border: 0.1rem solid;
+  border: 0.08rem solid;
   border-radius: 1.9rem;
   border-color: black;
   cursor: pointer; }
@@ -106,6 +107,8 @@ footer {
     transition: all 0.2s ease; }
 
 @media (max-width: 540px) {
+  .imagen-inicio {
+    background-position: top; }
   .titulo-inicio {
     font-size: 3.75rem;
     align-self: center; }

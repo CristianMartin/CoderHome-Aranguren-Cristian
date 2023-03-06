@@ -1,13 +1,14 @@
 .imagen-inicio {
-	background-image: url(../assets/imagen-inicio.png);
-	background-repeat: no-repeat;
+	background-image: url(../assets/img-inicio.png);
 	background-position: center;
-	background-size: cover;
+	background-repeat: no-repeat;
 	background-attachment: fixed;
+	background-size: cover;
+	padding: 0;
 }
 
 .seccion-inicio {
-    margin-top: 6rem;
+    padding-top: 5rem;
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
@@ -38,7 +39,7 @@
 	font-size: 1.25rem;
 	padding: 0.375rem 0.75rem;
 	background-color: $background-color_boton;
-	border: 0.1rem solid;
+	border: 0.08rem solid;
 	border-radius: 1.9rem;
 	border-color: $border-color;
 	cursor: pointer;
@@ -50,6 +51,10 @@
 }
 
 @media (max-width: 540px) {
+	.imagen-inicio {
+		background-position: top;
+	}
+
     .titulo-inicio {
         font-size: 3.75rem;
         align-self: center;
