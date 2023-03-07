@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Logearse en la plataforma de CoderHome para hacer seguimiento de sus productos o adquirir nuevos"
+      content="Registrarse en la plataforma de CoderHome para obtener un usuario y poder hacer seguimiento de sus productos o adquirir nuevos"
     />
-    <meta name="keywords" content="Login, logearse, ingresar, entrar" />
+    <meta
+      name="keywords"
+      content="Register, register user, sign up, registrarse, registrar usuario"
+    />
     <link rel="short icon" href="../assets/contao-logo.png" />
     <link rel="stylesheet" href="../css/styles.css" />
     <link
@@ -22,7 +25,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="../css/styles.css" />
-    <title>CoderHome | Login</title>
+    <title>CoderHome | Register</title>
   </head>
   <body>
     <header>
@@ -84,12 +87,11 @@
           >
             <div class="col-10 col-md-8 col-lg-6 col-xl-5">
               <div class="card bg-dark bg-gradient text-white">
-                <div class="card-body p-5 text-center">
+                <div class="card-body p-5 pb-4 text-center">
                   <div class="mb-md-4 mt-md-4 pb-4">
-                    <h1 class="mb-3 text-uppercase">Login</h1>
-                    <p class="text-white mb-5">
-                      Por favor, ingrese su usuario y contraseña
-                    </p>
+                    <h1 class="mb-3 pb-5 text-uppercase">
+                      Recuperar contraseña
+                    </h1>
 
                     <div class="form-outline form-white mb-4">
                       <input
@@ -102,26 +104,20 @@
 
                     <div class="form-outline form-white mb-4">
                       <input
-                        type="password"
-                        id="password"
+                        type="email"
+                        id="email"
                         class="form-control form-control-lg"
                       />
-                      <label class="form-label" for="password"
-                        >Contraseña</label
-                      >
+                      <label class="form-label" for="email">Email</label>
                     </div>
-                    <p class="small mb-5 pb-lg-2">
-                      <a class="text-info" href="./recuperar-contraseña.html"
-                        >¿Has olvidado tu contraseña?</a
-                      >
-                    </p>
+
                     <button
                       type="button"
-                      class="btn btn-outline-light btn-lg px-5"
+                      class="btn btn-outline-light btn-lg px-5 mt-4"
                       data-bs-toggle="modal"
                       data-bs-target="#loginModal"
                     >
-                      Login
+                      Recuperar
                     </button>
                     <div
                       class="modal fade"
@@ -131,13 +127,14 @@
                       aria-hidden="true"
                     >
                       <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content bg-success-subtle">
+                        <div class="modal-content bg-warning-subtle">
                           <div class="modal-header">
                             <h1
                               class="modal-title fs-5 text-dark"
                               id="modalLabel"
                             >
-                              Usuario logueado correctamente
+                              Se ha enviado un mail de recuperación a su mail,
+                              verifíquelo.
                             </h1>
                             <a
                               type="button"
@@ -148,12 +145,12 @@
                           </div>
                           <div class="modal-body d-flex justify-content-center">
                             <i
-                              class="bi bi-check-circle-fill text-success icon-size"
+                              class="bi bi-exclamation-circle-fill text-warning icon-size"
                             ></i>
                           </div>
                           <div class="modal-footer">
                             <a
-                              href="../index.html"
+                              href="./login.html"
                               type="button"
                               class="btn btn-danger"
                               >Close</a
@@ -162,37 +159,6 @@
                         </div>
                       </div>
                     </div>
-                    <div
-                      class="d-flex justify-content-evenly mt-4 pt-1"
-                    >
-                      <a
-                        class="btn btn-dark btn-lg rounded-circle"
-                        href="https://www.facebook.com/"
-                        role="button"
-                        target="_blank"
-                        ><i class="bi bi-facebook"></i
-                      ></a>
-                      <a
-                        class="btn btn-dark btn-lg rounded-circle"
-                        href="https://www.twitter.com/"
-                        role="button"
-                        target="_blank"
-                        ><i class="bi bi-twitter"></i
-                      ></a>
-                      <a
-                        class="btn btn-dark btn-lg rounded-circle"
-                        href="https://www.google.com/"
-                        role="button"
-                        target="_blank"
-                        ><i class="bi bi-google"></i
-                      ></a>
-                    </div>
-                  </div>
-                  <div>
-                    <p class="mb-0">
-                      ¿No tienes una cuenta?
-                      <a class="text-info" href="./register.html">Registrarse</a>
-                    </p>
                   </div>
                 </div>
               </div>
