@@ -1,14 +1,20 @@
-$text-color: white;
-$text-color-hover: rgb(134, 140, 147);
 $font-family_title: 'Oswald', sans-serif;
 $font-family_text: 'Sono', sans-serif;
+$text-color: white;
+$text-color-hover: #f47c00;
 $background-color_body: rgb(187, 188, 195);
-$background-color_boton: slategrey;
-$background-color_text_box: rgb(130, 130, 131);
-$border-color: black;
-$copyright-color: rgb(38, 40, 43);
+$background-color_navbar: linear-gradient(to bottom, #004C98, #021E3A);
+$background-color_boton: linear-gradient(to bottom, #004C98, #021E3A);
+$background-color_footer: linear-gradient(to bottom, #004C98, #021E3A);
+$border-color: #040500;
 
 @import "https://fonts.googleapis.com/css2?family=Oswald&family=Sono&display=swap";
+@import "header";
+@import "footer";
+@import "index";
+@import "quienes-somos";
+@import "productos";
+@import "error-404";
 
 * {
 	margin: 0;
@@ -18,6 +24,9 @@ $copyright-color: rgb(38, 40, 43);
 
 body {
 	background-color: $background-color_body;
+	position: relative;
+	padding-bottom: 10rem;
+	min-height: 100vh;
 }
 
 h1 {
@@ -28,7 +37,7 @@ h1 {
 
 h2 {
 	color: $text-color;
-	margin-bottom: 10px;
+	margin-bottom: 1rem;
 	font-family: $font-family_title;
 }
 
@@ -36,209 +45,6 @@ p {
 	font-family: $font-family_text;
 }
 
-.coderhome-titulo {
-	font-size: 80px;
-}
-
-footer {
-    position: sticky;
-    width: 100%;
-}
-
-.copyright {
-    background-color: $copyright-color;
-}
-
-.logo-coderhome {
-	width: 80px;
-	height: 70px;
-	margin-left: 20px;
-	margin-top: 10px;
-	&:hover {
-		color: $text-color;
-		box-shadow: 0 4px 16px orange;
-		transition: all 0.2s ease;
-	}
-}
-
-.imagen-inicio {
-	background-image: url(../assets/imagen-inicio.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	background-attachment: fixed;
-}
-
-.seccion-inicio {
-	margin-top: 60px;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
-	gap: 0px 0px;
-	grid-auto-flow: column;
-	justify-items: center;
-	grid-template-areas: "titulo-inicio" "leyenda-inicio" "boton-inicio";
-}
-
-.titulo-inicio {
-	grid-area: titulo-inicio;
-}
-
-.leyenda-inicio {
-	grid-area: leyenda-inicio;
-	color: $text-color;
-	font-size: 28px;
-	text-align: center;
-	max-width: 400px;
-}
-
-.boton-inicio {
-	grid-area: boton-inicio;
-	color: $text-color;
-	margin-top: 50%;
-	font-size: 20px;
-	padding: 6px 12px;
-	background-color: $background-color_boton;
-	border: 1.5px solid;
-	border-radius: 30px;
-	border-color: $border-color;
-	cursor: pointer;
-	&:hover {
-		color: $text-color;
-		box-shadow: 0 4px 16px lightslategrey;
-		transition: all 0.2s ease;
-	}
-}
-
-.navbar {
-	display: flex;
-	align-items: center;
-	ul {
-		display: flex;
-		list-style: none;
-		margin-top: 15px;
-		margin-left: 24%;
-		li {
-			a {
-				text-decoration: none;
-				color: $text-color;
-				font-size: 30px;
-				margin-left: 20px;
-				&:hover {
-					color: $text-color-hover;
-					font-size: 30px;
-				}
-			}
-		}
-	}
-}
-
-.login {
-	display: flex;
-	align-items: center;
-	img {
-		color: $text-color;
-		margin-left: 240px;
-		margin-right: 6px;
-	}
-}
-
-.seccion-quienes-somos {
-	margin-top: 60px;
-	display: grid;
-	grid-auto-flow: column dense;
-	grid-template-columns: 0.8fr 1fr;
-	grid-template-rows: 0.4fr 2fr;
-	gap: 0px 0px;
-	grid-template-areas: "imagen titulo" "imagen leyenda";
-    margin-bottom: 38px;
-}
-
-.quienes-somos-titulo {
-	grid-area: titulo;
-	justify-self: left;
-	align-self: center;
-}
-
-.quienes-somos-leyenda {
-	grid-area: leyenda;
-	font-size: 18px;
-	max-width: 700px;
-	padding: 10px 15px;
-	color: $text-color;
-	border-radius: 24px;
-	border: 2px solid rgb(132, 138, 144);
-	background-color: $background-color_text_box;
-	overflow: auto;
-}
-
-.quienes-somos-img {
-	grid-area: imagen;
-	justify-self: center;
-	align-self: flex-end;
-	border-radius: 24px;
-	width: 400px;
-	height: 408px;
-	border: 2px solid rgb(132, 138, 144);
-}
-
-.navbar-toggler {
-	color: $text-color;
-	font-size: 60px;
-	padding: 0;
-	&:focus {
-		outline: none;
-	}
-	&:hover {
-		color: $text-color;
-		box-shadow: 0 4px 16px lightslategrey;
-		transition: all 0.2s ease;
-	}
-}
-
-.adjust-img {
-	height: 296px;
-}
-
-@media (max-width: 990px) {
-	.navbar {
-		ul {
-			flex-direction: column;
-			text-align: end;
-		}
-	}
-
-	.login {
-		img {
-			display: none;
-		}
-		display: block;
-	}
-
-	.seccion-quienes-somos {
-		grid-template-columns: 1fr;
-		grid-template-rows: 0fr 0.5fr 1fr;
-		gap: 30px 0px;
-		grid-template-areas: "titulo" "imagen" "leyenda";
-	}
-
-	.quienes-somos-titulo {
-		grid-area: titulo;
-		justify-self: center;
-		align-self: center;
-	}
-
-	.quienes-somos-leyenda {
-		margin: 20px;
-	}
-}
-
-@media (max-width: 540px) {
-	.seccion-inicio {
-		margin-top: 100px;
-	}
-
-    .quienes-somos-img {
-        align-self: center;
-    }
+.icon-size {
+	font-size: 5rem;
 }
