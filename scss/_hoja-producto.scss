@@ -6,13 +6,28 @@
     width: 25%;
 }
 
+.preguntas-w {
+    width: 100%;
+}
+
 @media (max-width: 780px) {
 	.button-w {
-        width: 100%;
+        width: 50%;
     }
 
     .carrousel-w {
         width: 100%;
+    }
+    
+}
+
+@media (max-width: 460px) {
+	.button-w {
+        width: 70%;
+    }
+
+    .preguntas-w {
+        width: 70%;
     }
     
 }
