@@ -21,14 +21,18 @@
 	min-width: 9.375rem;
 }
 
+@mixin animation-shadow {
+	color: $text-color;
+	box-shadow: 0 0.25rem 1rem $text-color-hover;
+	transition: all 0.2s ease;
+}
+
 .logo-coderhome {
 	width: 5rem;
 	height: 4.375rem;
 	margin: 0.625rem;
 	&:hover {
-		color: $text-color;
-		box-shadow: 0 0.25rem 1rem orange;
-		transition: all 0.2s ease;
+		@include animation-shadow;
 	}
 }
 
@@ -39,9 +43,7 @@
 		outline: none;
 	}
 	&:hover {
-		color: $text-color;
-		box-shadow: 0 0.25rem 1rem $text-color-hover;
-		transition: all 0.2s ease;
+		@include animation-shadow;
 	}
 }
 
