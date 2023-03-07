@@ -174,12 +174,12 @@ footer {
   .quienes-somos-img {
     height: 22rem; } }
 
-.card-body button {
+.card-body .btn {
   background-image: linear-gradient(to bottom, #004C98, #021E3A); }
-  .card-body button:hover {
+  .card-body .btn:hover {
     background-image: inherit;
     background-color: #f47c00; }
-    .card-body button:hover:active {
+    .card-body .btn:hover:active {
       background-color: #f47c00; }
 
 .card-img-actions span {
@@ -191,6 +191,18 @@ footer {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%; }
+
+.carrousel-w {
+  width: 50%; }
+
+.button-w {
+  width: 25%; }
+
+@media (max-width: 780px) {
+  .button-w {
+    width: 100%; }
+  .carrousel-w {
+    width: 100%; } }
 
 * {
   margin: 0;
