@@ -2,9 +2,9 @@
 	background-image: url(../assets/img-inicio.png);
 	background-position: center;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
 	background-size: cover;
-	padding: 0;
+	box-shadow: 0.125rem 0.07rem 0.313rem #000;
+	padding-bottom: 9.5rem;
 }
 
 .seccion-inicio {
@@ -48,6 +48,29 @@
 		box-shadow: 0 0.25rem 1rem $text-color-hover;
 		transition: all 0.2s ease;
 	}
+}
+
+.marca-img {
+	width: 22%;
+	aspect-ratio: 3/2;
+	object-fit: contain;
+	mix-blend-mode: color-burn;
+}
+
+.card-shadow {
+	margin: 0 0.5em;
+	box-shadow: 2px 6px 8px 0 $border-color;
+	border: none;
+	border-radius: 0;
+}
+
+.carousel-button {
+	background-color: #e1e1e1;
+	width: 5vh;
+	height: 5vh;
+	border-radius: 50%;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 @media (max-width: 540px) {
