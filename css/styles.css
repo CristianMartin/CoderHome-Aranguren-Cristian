@@ -118,7 +118,7 @@ footer {
   border-radius: 0; }
 
 .carousel-button {
-  background-color: #e1e1e1;
+  background-image: linear-gradient(to bottom, #004C98, #021E3A);
   width: 5vh;
   height: 5vh;
   border-radius: 50%;
